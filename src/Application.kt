@@ -1,5 +1,6 @@
 package com.example
 
+import com.example.routes.*
 import io.ktor.application.*
 import io.ktor.response.*
 import io.ktor.routing.*
@@ -14,6 +15,7 @@ fun Application.module(testing: Boolean = false) {
         get("/") {
             call.respondText { "hello world" }
         }
+        home()
 
     }
 }
