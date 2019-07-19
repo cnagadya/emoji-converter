@@ -11,10 +11,6 @@ fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 @kotlin.jvm.JvmOverloads
 fun Application.module(testing: Boolean = false) {
     routing {
-        //get dsl takes the path string as first param and body lambda as its second
-        get("/") {
-            call.respondText { "hello world" }
-        }
         home()
 
     }
